@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Optimization</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="map">
+        <table>
+            <tr>
+                <td>2</td>
+                <td>4</td>
+                <td>8</td>
+                <td>12</td>
+                <td>6</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>18</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>20</td>
+                <td>2</td>
+                <td>8</td>
+                <td>9</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2</td>
+                <td>6</td>
+                <td>4</td>
+                <td>5</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>6</td>
+                <td>7</td>
+                <td>19</td>
+                <td>3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>7</td>
+                <td>15</td>
+                <td>11</td>
+                <td>8</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <label style="margin-right: 30px;">Start Point</label>
+        <label for="startx">X:</label>
+        <input type="text" name="startx" id="startx">
+        <label for="starty">Y:</label>
+        <input type="text" name="starty" id="starty">
+        <br>
+        <label style="margin-right: 30px;">End Point</label>
+        <label for="endx">X:</label>
+        <input type="text" name="endx" id="endx">
+        <label for="endy">Y:</label>
+        <input type="text" name="endy" id="endy">
+        <br>
+        <button id="startbtn">Get Path</button>
+        <br>
+        <label style="margin-right: 20px;">Path: </label>
+        <span id="path"></span>
+    </div>
+    
+    <script src="getroute.js"></script>
+</body>
+</html>
